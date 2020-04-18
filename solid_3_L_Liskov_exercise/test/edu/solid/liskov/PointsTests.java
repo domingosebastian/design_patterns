@@ -6,8 +6,6 @@ import java.util.List;
 import org.junit.Assert;
 import org.junit.Test;
 
-import edu.solid.liskov.Point2D;
-
 public class PointsTests {
 
 	private final Point2D reference = new Point2D(3,5);
@@ -22,7 +20,7 @@ public class PointsTests {
 	public void test_equal_if_only_if_dinstance_0() {
 		
 		for (Point2D point: test_points) {
-			Assert.assertEquals("test for " + reference + " y " + point,
+			Assert.assertEquals("test for " + reference + " and " + point,
 					             reference.equals(point), 
 					             reference.distance(point) == 0);
 		}
