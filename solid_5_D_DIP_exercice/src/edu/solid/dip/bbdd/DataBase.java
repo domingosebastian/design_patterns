@@ -10,7 +10,7 @@ public class DataBase {
 	
 	static {
 		Map<String, Integer> northShopStock = new HashMap<>();
-		northShopStock.put("lamp",300);
+		northShopStock.put("lamp",350);
 		northShopStock.put("table",500);
 		
 		stocks.put("north shop", northShopStock);
