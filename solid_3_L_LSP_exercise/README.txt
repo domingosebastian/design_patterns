@@ -9,5 +9,5 @@ complies with a basic rule of geometry:
 Modify the test so that the list test_points has an input that makes the test system fail 
 (in particular, it should demonstrate that Point3D is not a safe substitute for Point2D.)
 
-NOTE: as you can see, this test is different: the starting point is a test
+NOTE: as you can see, this exercise is different: the starting point is a test
 system that works and the result is one that fails!!
