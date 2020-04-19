@@ -13,6 +13,7 @@ public class TextProcessorTests {
 	@Test
 	public void simple_test() {
 		
+		/* No need to use the "complex" interface */
 		TextProcessor procesador = new TextProcessorImpl();
 		
 		procesador.add("Spelynk");
