@@ -2,7 +2,7 @@ In this exercise, your task will be more destructive than constructive! ;-)
 
 You have a colleague who talks about how useless SOLID principles are.
 
-At the same time, he has built a test system (test/edu/solid /liskov/PointsTests.java) which proves that type Point2D 
+At the same time, they have built a test system (test/edu/solid /liskov/PointsTests.java) which proves that type Point2D 
 complies with a basic rule of geometry: 
  - the two points p1 and p2 are equal if, and only if, the distance from p1 to p2 equals 0.
 
