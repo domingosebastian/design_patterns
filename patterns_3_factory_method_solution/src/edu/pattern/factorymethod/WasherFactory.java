@@ -1,11 +1,11 @@
 package edu.pattern.factorymethod;
 
-//clase base que usara el cliente para crear cualquier tipo de lavadora
+// base class that the client will use to create any type of washer
 public abstract class WasherFactory {
 
 	public Washer create() {
 		
-		// proceso de construccion comun
+		// steps common to all types of washing machines
 		Washer washer = createWasher();
 		
 		washer.putControls();
@@ -15,8 +15,8 @@ public abstract class WasherFactory {
 	}
 
 
-	// proceso de construccion especifico de cada tipo de lavadora
-	// Permite que el tipo devuelto sea un subtipo de Lavadora (y por tanto,
-	// las invocaciones al metodo crea() devuelvan tipos diferentes de lavadoras)
+	// Specific construction process of each type of washing machine
+	// Allows the returned type to be a subtype of Washer
+	// (and therefore, invokes to the create () method return different types of washers)
    protected abstract Washer createWasher();
 }
