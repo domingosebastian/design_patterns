@@ -14,9 +14,9 @@ The original class (PrimeNumberGenerator) passes the test_natural_order.
 
 You must perform three steps:
 1 - Modify the PrimeNumberGenerator class to allow subclasses with specific sorting
-2 - Create a subclass of PrimeNumberGenerator that returns the list of prime numbers ​​from least to greatest
+2 - Create a subclass of PrimeNumberGenerator that returns the list of prime numbers ​​from smallest to greatest
 3 - Adapt the test so that test_reverse_order uses this new class
 
 -------------------------------
 Do not look for "show off" in the use of the API. It is not necessary to do it all in one line ;-)
-Try that the result code illustrates the principle explained well.
+Try to make the result code illustrate the principle in the best way possible.
