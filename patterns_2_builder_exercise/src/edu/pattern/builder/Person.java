@@ -1,4 +1,4 @@
-package edu.pattern.pattern;
+package edu.pattern.builder;
 
 public class Person {
 
