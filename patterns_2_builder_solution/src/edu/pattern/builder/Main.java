@@ -17,7 +17,7 @@ public class Main {
                 .setSchool("York school")
                 .build();
 		
-		// esta codigo NO debe compilar
+		// this code should NOT compile
 		/* 
 		Person wrong = new Person.Builder("Luisa")
 				    .setAdult(20)
