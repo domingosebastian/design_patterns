@@ -1,11 +1,10 @@
-El ejercicio consiste en proporcionar, tal com se ha comentado en el curso dos 
-builder especificos para personas adultas y menores.
+This exercise is to provide two
+specific builders, as discussed in the lesson: one for adults and one for minors.
 
-Construid estos builders en la clase Person.
+Contruct these builders in the Person class.
 
-Podeis usar la clase Main para saber que metodos se espera que tengan estos builders.
+You can use the Main class to know what methods these builders are expected to have.
  
- Fijaos que la clase Main tiene dos bloques de codigo comentado. El primer bloque debe
- compilar correctamente una vez hecho el ejercicio. En cambio el segundo bloque NO debe
- compilar ya que precisamente intentamos evitar este tipo inconsistencias (adultos que 
- van al colegio).
+  Notice that the Main class has two blocks of commented code. The first block must
+  compile correctly after the exercise. However, the second block should NOT
+  compile since we are specifically trying to avoid these type of inconsistencies (adults that go to school).
