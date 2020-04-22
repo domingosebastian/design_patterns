@@ -1,7 +1,7 @@
-Queremos crear un Factory que use el factory method pattern para centralizar la logica
-de creacion de una lavadora
+We want to create a Factory that uses the factory method pattern to centralize 
+the creation logic of a washing machine.
 
-Fijaos en el test: observareis que hay mucho en comun en el proceso de crear lavadoras 
-de los dos tipos (carga frontal y carga superior).
+Note the test: you will see that the two types of washing machines (front loading and top loading), 
+have a lot in common in the process of their creation.
 
-Cread el factory comentado y adaptad el test para que lo use en las dos pruebas.
+Create the required factory and adapt the test for use in both tests.
