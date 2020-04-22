@@ -10,10 +10,10 @@ public class Point3D extends Point2D {
 	}
 
 	
-	public double distancia (Point3D otro) {
-		int distX = x - otro.x;
-		int distY = y - otro.y;
-		int distZ = z - otro.z;
+	public double distance (Point3D other) {
+		int distX = x - other.x;
+		int distY = y - other.y;
+		int distZ = z - other.z;
 		return Math.sqrt( distX * distX + distY * distY + distZ * distZ);
 	}
 
@@ -40,7 +40,7 @@ public class Point3D extends Point2D {
 
 	@Override
 	public String toString() {
-		return "Punto3D [x=" + x + ", y=" + y + ", z = " + z + "]";
+		return "Point3D [x=" + x + ", y=" + y + ", z = " + z + "]";
 	}
 	
 	
