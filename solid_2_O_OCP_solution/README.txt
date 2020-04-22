@@ -18,5 +18,5 @@ You must perform three steps:
 3 - Adapt the test so that test_reverse_order uses this new class
 
 -------------------------------
-Do not look for "show off" in the use of the API. It is not necessary to do it all in one line ;-)
+Don't try to "show off" in the use of the API. It is not necessary to do it all in one line ;-)
 Try to make the result code illustrate the principle in the best way possible.
