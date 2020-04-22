@@ -15,19 +15,19 @@ public class PrimeNumberGeneratorTests {
 	@Test
 	public void test_natural_order() {
 		
-		PrimeNumberGenerator generador = new PrimeNumberGenerator();
+		PrimeNumberGenerator generator = new PrimeNumberGenerator();
 		List<Integer> expected = Arrays.asList(2,3,5,7,11,13);
 		
-		Assert.assertThat(generador.primes(15), is(expected));
+		Assert.assertThat(generator.primes(15), is(expected));
 	}	
 
 	@Test
 	public void test_reverse_order() {
 		
-		PrimeNumberGenerator generador = new PrimeNumberGeneratorReversed();
+		PrimeNumberGenerator generator = new PrimeNumberGeneratorReversed();
 		List<Integer> expected = Arrays.asList(13,11,7,5,3,2);
 		
-		Assert.assertThat(generador.primes(15), is(expected));
+		Assert.assertThat(generator.primes(15), is(expected));
 	}	
 
 }
