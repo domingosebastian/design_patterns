@@ -8,7 +8,7 @@ import org.junit.Test;
 
 public class PointsTests {
 
-	// this value shows the subtype Point3D can not safely replace the Point2D type
+	// this value shows the subtype Point3D cannot safely replace the Point2D type
 	private final Point2D reference = new Point3D(3,5,1);
 	
 	private final List<Point2D> test_points = Arrays.asList(
@@ -19,7 +19,7 @@ public class PointsTests {
 	
 	
 	@Test
-	public void test_equal_if_only_if_dinstance_0() {
+	public void test_equal_if_only_if_distance_0() {
 		
 		for (Point2D point: test_points) {
 			Assert.assertEquals("test for " + reference + " and " + point,
