@@ -8,12 +8,12 @@ import java.util.stream.Collectors;
 public class BBDD {
 
 	private static final String GENRE_FANTASY = "fantasy";
-	private static final String WAR_GENRE = "war";
+	private static final String GENRE_WAR = "war";
 	
 	public static final String DIRECTOR_SPIELBERG = "Spielberg";
 	
 	public static final Movie ET = new Movie("ET", GENRE_FANTASY, DIRECTOR_SPIELBERG);
-	public static final Movie SAVING_RYAN = new Movie("Saving Private Ryan", WAR_GENRE, DIRECTOR_SPIELBERG);
+	public static final Movie SAVING_RYAN = new Movie("Saving Private Ryan", GENRE_WAR, DIRECTOR_SPIELBERG);
 	
 	public static final Movie [] ALL = { ET, SAVING_RYAN};
 	

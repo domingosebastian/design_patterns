@@ -15,15 +15,15 @@ public class TestMultilingual {
 		// single decision point
 		MessagesAbstractFactory abstractFactory = new MessagesEsFactory();
 		
-		Questions preguntas = abstractFactory.getQuestions();
+		Questions questions = abstractFactory.getQuestions();
 		
-		assertEquals("¿qué hora es?", preguntas.askTime() );
-		assertEquals("¿qué tiempo hace?", preguntas.askWeather() );
+		assertEquals("¿qué hora es?", questions.askTime() );
+		assertEquals("¿qué tiempo hace?", questions.askWeather() );
 		
-		Greetings saludos = abstractFactory.getGreetings();
+		Greetings greetings = abstractFactory.getGreetings();
 		
-		assertEquals("buenos días", saludos.goodMorning());
-		assertEquals("buenas tardes", saludos.goodAfternoon());
+		assertEquals("buenos días", greetings.goodMorning());
+		assertEquals("buenas tardes", greetings.goodAfternoon());
 	}
 	
 	@Test
@@ -32,15 +32,15 @@ public class TestMultilingual {
 		// single decision point
 		MessagesAbstractFactory abstractFactory = new MessagesEnFactory();
 
-		Questions preguntas = abstractFactory.getQuestions();
+		Questions questions = abstractFactory.getQuestions();
 		
-		assertEquals("what time is it?", preguntas.askTime() );
-		assertEquals("how is the weather?", preguntas.askWeather() );
+		assertEquals("what time is it?", questions.askTime() );
+		assertEquals("how is the weather?", questions.askWeather() );
 		
-		Greetings saludos = abstractFactory.getGreetings();
+		Greetings greetings = abstractFactory.getGreetings();
 		
-		assertEquals("good morning", saludos.goodMorning());
-		assertEquals("good afternoon", saludos.goodAfternoon());
+		assertEquals("good morning", greetings.goodMorning());
+		assertEquals("good afternoon", greetings.goodAfternoon());
 	}
 
 }

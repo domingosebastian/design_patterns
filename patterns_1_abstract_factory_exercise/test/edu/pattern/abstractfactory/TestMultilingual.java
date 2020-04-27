@@ -15,28 +15,28 @@ public class TestMultilingual {
 
 	@Test
 	public void test_es() {
-		Questions preguntas = new QuestionsEs();
+		Questions questions = new QuestionsEs();
 		
-		assertEquals("¿qué hora es?", preguntas.askTime() );
-		assertEquals("¿qué tiempo hace?", preguntas.askWeather() );
+		assertEquals("¿qué hora es?", questions.askTime() );
+		assertEquals("¿qué tiempo hace?", questions.askWeather() );
 		
-		Greetings saludos = new GreetingsEs();
+		Greetings greetings = new GreetingsEs();
 		
-		assertEquals("buenos días", saludos.goodMorning());
-		assertEquals("buenas tardes", saludos.goodAfternoon());
+		assertEquals("buenos días", greetings.goodMorning());
+		assertEquals("buenas tardes", greetings.goodAfternoon());
 	}
 	
 	@Test
 	public void test_en() {
-		Questions preguntas = new QuestionsEn();
+		Questions questions = new QuestionsEn();
 		
-		assertEquals("what time is it?", preguntas.askTime() );
-		assertEquals("how is the weather?", preguntas.askWeather() );
+		assertEquals("what time is it?", questions.askTime() );
+		assertEquals("how is the weather?", questions.askWeather() );
 		
-		Greetings saludos = new GreetingsEn();
+		Greetings greetings = new GreetingsEn();
 		
-		assertEquals("good morning", saludos.goodMorning());
-		assertEquals("good afternoon", saludos.goodAfternoon());
+		assertEquals("good morning", greetings.goodMorning());
+		assertEquals("good afternoon", greetings.goodAfternoon());
 	}
 
 }
