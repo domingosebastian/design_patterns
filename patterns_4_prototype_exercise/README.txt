@@ -4,13 +4,14 @@ de caracteristicas (pan, carne, extras ...) que se establecen en su constructor.
 
 HamburguesaFactory permite crear hamburguesas especificando cada uno de sus partes. Por ejemplo:
 
-		Hamburguesa especial = new HamburguesaFactory()
-                .setCarne(Carne.POLLO)
-                .setSize(Size.EXTRA_GRANDE)
-                .setPan(Pan.NORMAL)
-                .addExtra(Extra.QUESO)
-                .addExtra(Extra.MAYONESA)
-                .crea();
+
+		Burger special = new BurgerFactory()
+				                   .setMeat(Meat.BEAF)
+				                   .setSize(Size.EXTRA_LARGE)
+				                   .setBread(Bread.WITH_SEEDS)
+				                   .addExtra(Extra.MAYONNAISE)
+				                   .addExtra(Extra.CHEESE)
+				                   .create();
 
  Además, guarda "configuraciones" pre-establecidas para las hamburguesas de la carta:
  
