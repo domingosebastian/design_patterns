@@ -13,7 +13,7 @@ the following:
    2 - propagate the call to the database implementation obtained in the constructor
   
 - when you receive an invocation to records ():
-   1 - save a "readed" message in the logger
+   1 - save a "reader" message in the logger
    2 - return the result of the obtained database in the constructor to the same call
   
 When you have implemented the LoggerDecorator class you should go to the test
