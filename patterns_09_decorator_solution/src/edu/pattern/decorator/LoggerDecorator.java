@@ -20,7 +20,7 @@ public class LoggerDecorator implements DataBase {
 
 	@Override
 	public List<String> records() {
-		logger.add("readed");
+		logger.add("read");
 		return impl.records();
 	}
 

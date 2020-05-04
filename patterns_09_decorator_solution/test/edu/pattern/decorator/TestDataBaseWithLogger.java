@@ -42,7 +42,7 @@ public class TestDataBaseWithLogger {
 		
 		assertTrue("the adapter does not have the new record", records.contains("record"));
 	
-		assertTrue("read access has not been recorded", logger.getLogs().contains("readed"));
+		assertTrue("read access has not been recorded", logger.getLogs().contains("read"));
 	}
 
 	
