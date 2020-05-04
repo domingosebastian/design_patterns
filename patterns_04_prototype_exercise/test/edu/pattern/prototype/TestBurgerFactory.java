@@ -17,33 +17,33 @@ public class TestBurgerFactory {
 	public void test_menu() {
 		Burger royal = BurgerFactory.royal();
 
-		assertEquals(Meat.BEAF, royal.getMeat());
+		assertEquals(Meat.BEEF, royal.getMeat());
 		assertEquals(Size.LARGE, royal.getSize());
 		assertEquals(Bread.NORMAL, royal.getBread());
-		assertTrue(royal.getExtras().contains(Extra.ONION));
+		assertTrue(royal.getExtras().contains(Extra.ONIONS));
 		assertTrue(royal.getExtras().contains(Extra.CHEESE));
-		assertFalse(royal.getExtras().contains(Extra.CUCUMBER));
+		assertFalse(royal.getExtras().contains(Extra.PICKLES));
 		assertFalse(royal.getExtras().contains(Extra.MAYONNAISE));
 	}
 
 	@Test
-	public void test_royal_si_cebolla() {
+	public void test_royal_without_onions() {
 		// we want to simplify ordering this burger !!
 		
-		Burger royalWithoutOnion = new BurgerFactory()
-				                              .setMeat(Meat.BEAF)
+		Burger royalWithoutOnions = new BurgerFactory()
+				                              .setMeat(Meat.BEEF)
 				                              .setSize(Size.LARGE)
 				                              .setBread(Bread.NORMAL)
 				                              .addExtra(Extra.CHEESE)
 				                              .create();
 
-		assertEquals(Meat.BEAF, royalWithoutOnion.getMeat());
-		assertEquals(Size.LARGE, royalWithoutOnion.getSize());
-		assertEquals(Bread.NORMAL, royalWithoutOnion.getBread());
-		assertFalse(royalWithoutOnion.getExtras().contains(Extra.ONION));
-		assertTrue(royalWithoutOnion.getExtras().contains(Extra.CHEESE));
-		assertFalse(royalWithoutOnion.getExtras().contains(Extra.CUCUMBER));
-		assertFalse(royalWithoutOnion.getExtras().contains(Extra.MAYONNAISE));
+		assertEquals(Meat.BEEF, royalWithoutOnions.getMeat());
+		assertEquals(Size.LARGE, royalWithoutOnions.getSize());
+		assertEquals(Bread.NORMAL, royalWithoutOnions.getBread());
+		assertFalse(royalWithoutOnions.getExtras().contains(Extra.ONIONS));
+		assertTrue(royalWithoutOnions.getExtras().contains(Extra.CHEESE));
+		assertFalse(royalWithoutOnions.getExtras().contains(Extra.PICKLES));
+		assertFalse(royalWithoutOnions.getExtras().contains(Extra.MAYONNAISE));
 		
 	}
 }
