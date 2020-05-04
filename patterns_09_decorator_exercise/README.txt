@@ -1,26 +1,26 @@
-Tenemos un sistema "funcional" de base de datos construido con la clase BaseDatosMemoria.
+We have a "functional" database system built with the InMemoryDataBase class.
 
-Vuestra mision es implementar un "adapter" a la funcionalidad de base de datos (expresada en 
-la interface BaseDatos) que haga uso de un logger e informe a este logger de las operaciones
-realizadas.
+Your mission is to implement an "adapter" to the database functionality (expressed in
+the DataBase interface) that makes use of a logger and informs this logger of the operations
+made.
 
-En particular, debeis modificar el LoggerDecorator para que usando un determando logger e una 
-implementacion de DataBase (ambos obtenidos en un constructor que debeis implementar) haga
-lo siguiente:
+In particular, you must modify the LoggerDecorator so that using a certain logger and a
+DataBase implementation (both obtained in a constructor that you must implement) do
+the following:
 
-- cuando recibe una invocaciona a insert(record):
-   1 - guarde en el logger un mensaje "insert " + record
-   2 - propage la llamada a la implementacion de base de datos obtenida en el constructor
-  
-- cuando recibe una invocacion a records():
-   1 - guarde en el logger un mensaje "readed"
-   2 - devuelva el resultado de la base de datos obtenida en el constructor a la misma llamada
-  
-Cuando tengais implementada la clase LoggerDecorator debereis ir al test 
-test/edu/pattern/decorator/TestDataBaseWithLogger.java
+- when you receive an invocation to insert (record):
+   1 - save a message "insert" + record in the logger
+   2 - propagate the call to the database implementation obtained in the constructor
+  
+- when you receive an invocation to records ():
+   1 - save a "reader" message in the logger
+   2 - return the result of the obtained database in the constructor to the same call
+  
+When you have implemented the LoggerDecorator class you should go to the test
+test / edu / pattern / decorator / TestDataBaseWithLogger.java
 
-y modificar el metodo init para que se asigne a la variable bbdd un LoggerDecorator con los objetos
-logger y withoutLogger que ya estan creados.
+and modify the init method so that the bbdd variable is assigned a LoggerDecorator with the objects
+logger and withoutLogger that are already created.
 
-Fijaos en el objetivo de la aplicacion de este pattern: poder "enriquecer" el comportamiento
-de nuestra clase existente (InMemoryDataBase) sin modificar ni una linea de su codigo!
+Look at the objective of applying this pattern: to "enrich" the behavior
+of our existing class (InMemoryDataBase) without modifying a single line of its code!
