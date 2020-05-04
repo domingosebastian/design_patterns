@@ -19,8 +19,8 @@ public class BurgerFactory {
 		return new Burger(meat, size, bread, extras.toArray(new Extra[extras.size()]));
 	}
 	
-	public BurgerFactory setMeat(Meat carne) {
-		this.meat = carne;
+	public BurgerFactory setMeat(Meat meat) {
+		this.meat = meat;
 		return this;
 	}
 
@@ -29,8 +29,8 @@ public class BurgerFactory {
 		return this;
 	}
 
-	public BurgerFactory setBread(Bread pan) {
-		this.bread = pan;
+	public BurgerFactory setBread(Bread bread) {
+		this.bread = bread;
 		return this;
 	}
 
@@ -48,11 +48,11 @@ public class BurgerFactory {
 
 	// -- burgers on the menu
 	public static Burger royal() {
-		return new Burger ( Meat.BEAF, Size.LARGE, Bread.NORMAL, Extra.ONION, Extra.CHEESE);
+		return new Burger ( Meat.BEEF, Size.LARGE, Bread.NORMAL, Extra.ONIONS, Extra.CHEESE);
 	}
 
 	public static Burger king() {
-		return new Burger ( Meat.BEAF, Size.EXTRA_LARGE, Bread.NORMAL, Extra.ONION, Extra.EGG);
+		return new Burger ( Meat.BEEF, Size.EXTRA_LARGE, Bread.NORMAL, Extra.ONIONS, Extra.EGG);
 	}
 
 
