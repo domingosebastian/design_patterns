@@ -5,9 +5,9 @@ import java.util.List;
 
 public class Burger {
 
-	public enum Meat { BEAF, CHICKEN }
+	public enum Meat { BEEF, CHICKEN }
 	public enum Size { MEDIUM, LARGE, EXTRA_LARGE }
-	public enum Extra { ONION, CHEESE, MAYONNAISE, CUCUMBER, EGG }
+	public enum Extra { ONIONS, CHEESE, MAYONNAISE, CUCUMBER, EGG }
 	public enum Bread { NORMAL, WITH_SEEDS }
 	
 	private final Meat meat;
