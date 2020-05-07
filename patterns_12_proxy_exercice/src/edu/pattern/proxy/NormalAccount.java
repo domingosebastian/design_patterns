@@ -19,7 +19,7 @@ public class NormalAccount implements Account {
 	}
 
 	public void transfer (int amount) {
-		amount += amount;
+		this.amount += amount;
 	}
 	
 }

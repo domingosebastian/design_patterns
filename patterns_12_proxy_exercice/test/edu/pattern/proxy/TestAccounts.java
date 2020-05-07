@@ -10,37 +10,37 @@ import edu.pattern.proxy.NormalAccount;
 public class TestAccounts {
 
 	/**
-	 * Este test no hay que modificarlo. Ya funciona y la 
-	 * idea es que debe seguir haciendolo
+	 * This test should not be modified. It already works and 
+	 * should continue to do so
 	 */
 	@Test
 	public void test_normal_account() {
-		Account cuentaNormal = new NormalAccount("cliente");
-		assertEquals("cliente", cuentaNormal.getClient());
-		assertEquals(0, cuentaNormal.getQuantity());
+		Account normalAccount = new NormalAccount("client");
+		assertEquals("client", normalAccount.getClient());
+		assertEquals(0, normalAccount.getQuantity());
 
-		cuentaNormal.transfer(10);
-		assertEquals(10, cuentaNormal.getQuantity());
+		normalAccount.transfer(10);
+		assertEquals(10, normalAccount.getQuantity());
 
-		cuentaNormal.transfer(-20);
-		assertEquals(-10, cuentaNormal.getQuantity());
+		normalAccount.transfer(-20);
+		assertEquals(-10, normalAccount.getQuantity());
 	}
 
 	/**
-	 * Modificad la asignacion a cuentaNueva para que sea a vuestra clase
+	 * Modify the assignment using the new Account type
 	 */
 	@Test
 	public void test_new_account() {
-		Account cuentaNueva = new NormalAccount("cliente"); // cambiar !
-		assertEquals("cliente", cuentaNueva.getClient());
-		assertEquals(0, cuentaNueva.getQuantity());
+		Account newAccount = new NormalAccount("client"); // change it !
+		assertEquals("client", newAccount.getClient());
+		assertEquals(0, newAccount.getQuantity());
 
-		cuentaNueva.transfer(10);
-		assertEquals(10, cuentaNueva.getQuantity());
+		newAccount.transfer(10);
+		assertEquals(10, newAccount.getQuantity());
 
-		// esta operacion no se debe llevar a cabo
-		cuentaNueva.transfer(-20);
-		assertEquals(10, cuentaNueva.getQuantity());
+		// this operation should not be carried out
+		newAccount.transfer(-20);
+		assertEquals(10, newAccount.getQuantity());
 	}
 
 	
