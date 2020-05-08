@@ -26,8 +26,8 @@ public enum DDBB {
 		return emails.get(client);
 	}
 	
-	public void addCard (String client, LoyaltyService.Type tipo) {
-		cards.put(client, tipo);
+	public void addCard (String client, LoyaltyService.Type type) {
+		cards.put(client, type);
 	}
 	
 	public LoyaltyService.Type getCard (String client) {
