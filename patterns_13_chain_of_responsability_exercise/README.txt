@@ -1,19 +1,17 @@
-Nuestra aplicacion permite la gestion de documentos representados por la clase Document
+Our application allows the management of documents represented by the Document class
 
-En particular, tenemos distintos lectores para los distintos formatos de documento representados por
-la interface LectorDocumentos y sus distintas implementaciones: PdfReader, OdtReader ... (se espera que
-se vaya incrementando el numero de lectores disponibles).
+In particular, we have different readers for the different document formats represented by
+the Document Reader interface and its different implementations: PdfReader, OdtReader ... (it is expected that
+the number of available readers is increasing).
 
-Una funcionalidad básica es DocumentProcessor, que permite, dada una lista de documentos, devolver 
-una cadena con el contenido de todos ellos procesado por su lector correspondiente (en funcion del tipo 
-de documento).
+A basic functionality offered by the DocumentProcessor, given a list of documents, is to return
+a string with the content of all of the documents processed by its corresponding reader (depending on the document type).
 
-El sistema esta bastante estructurado pero aun hay una parte que no nos gusta: DocumentProcessor 
-se tiene que modificar para cada tipo de lector que aparece. 
+The system is quite structured but there is still a part that we don't like: DocumentProcessor
+it has to be modified for each type of reader that appears.
 
-Modificad el codigo para cada lector sea el que determina si puede o no procesar un documento y haced que 
-en la construccion de DocumentProcessor se le pasen todos los lectores disponibles. El objetivo es que,
-en caso de que aparezca un nuevo formato, con su lector correspondiente, no se tenga que cambiar nada de 
-DocumentProcessor.
+Modify the code for each reader to determine whether or not it can process a document and make it so that in the construction of DocumentProcessor all available readers are passed to it. The goal is that,
+in the event that a new format appears, with its corresponding reader, you do not have to change anything
+in DocumentProcessor.
 
-Hecho esto, adaptad el TestDocumentProcessor a vuestros cambios y comprobad que el test sigue funcionando.
+Once this is done, adapt the TestDocumentProcessor to your changes and check that the test continues to work.
