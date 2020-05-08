@@ -1,9 +1,8 @@
-En este ejercicio continuaremos con el ejemplo visto en la leccion.
+In this exercise we will continue with the example seen in the lesson.
 
-Observa las dos implementaciones de PackageProcessing: MultiplePackageProcessing y DangerousPackage. 
-Cada una recibe en el constructor el tipo de pedido que puede tratar e implementa el metodo process().
+Look at the two implementations of PackageProcessing: MultiplePackageProcessing and DangerousPackage.
+Each one receives in the constructor the type of order that it can process and implements the process () method.
 
-En el test encontrareis las instrucciones: crear una nueva implementacion de nombre InternationalPackageProcessing que
-acepte todas las peticiones excepto las que van a Mordor (mas detalles en el test)
+In the test you will find the instructions: create a new implementation called InternationalPackageProcessing that accepts all requests except those going to Mordor (more details in the test)
 
-Este es demasiado facil, eh? ;-)
+This is too easy, huh? ;-)
