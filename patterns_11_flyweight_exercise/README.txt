@@ -1,26 +1,26 @@
-Nuestra aplicacion dispone de distintos jugadores de un mismo equipo, cada uno con su clase:
-Jugador1, Jugador2 y Jugador3
+Our application has different players from the same team, each with their class:
+Player1, Player2 and Player3
 
-Cada jugador, entre otras cosas, tiene un metodo dibuja() que devuelve un String mostrando
-su camiseta.
+Each player, among other things, has a draw () method that returns a String showing
+their strip.
 
-Todos los jugadores comparten camiseta identica excepto por el numero, en la parte central.
+All the players share an identical strip except for the number, in the central part.
 
-Podeis ejecutar la clase Main para para observar como la tres camisetas se muestran por
-consola.
+You can run the Main class to see how the three strips are shown per
+console.
 
-El objetivo del ejercicio es evitar un problema que tenemos con el uso de la memoria: 
-queremos usar el pattern flyweight para evitar tener una copia para cada camiseta.
+The objective of the exercise is to avoid a problem that we have with the use of memory:
+we want to use the flyweight pattern to avoid having a copy of each strip.
 
-La estrategia que usaremos sera crear una clase Camiseta con una "plantilla" de la camiseta,
-usando en lugar del numero un "placeholder": p.e. "X"
+The strategy we'll use will be to create a T-shirt class with a T-shirt "template",
+using a "placeholder" instead of the number: p.e. "X"
 
-Esta clase debe ser capaz de pintar cualquier camiseta sustituyendo la X por el numero correspondiente
-(para simplificar, supondremos que no hace falta tratar numeros de dos cifras)
+This class must be able to paint any strip by substituting the corresponding number for X
+(For simplicity, we will assume that you do not need to process two-digit numbers)
 
-Cada jugador tendra una referencia a esta camiseta y debera eliminar la variable propia camiseta.
+Each player will have a reference to this strip and must remove the variable strip itself.
 
-Para implementar el metodo dibuja, se usara la referencia a Camiseta pasando como "contexto" su numero particular.
+To implement the draw method, the reference to T-shirt will be used passing as "context" its particular number.
 
-El resultado de ejecutar el metodo main debe ser identico al original: dibujar las tres camisetas, cada uno
-con su numero.
+The result of executing the main method must be identical to the original: draw the three strips, each one
+with a number.
