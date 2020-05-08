@@ -1,38 +1,38 @@
-Hemos creado un sistema para nuestra empresa que esta siendo todo un exito.
+We've created a system for our company which turns out to be a great success!
 
-Entre otras muchas cosas, permite que los clientes se registren en nuestra web, indicando
-su email, establezcan  preferencias para los emails, obtengan un tipo de tarjeta etc etc
+Among many other things, it allows clients to register on our website, indicating
+their email address, establishing email preferences, obtain a type of loyalty card etc. etc.
 
-El problema es que, aunque se permita mucha flexibilidad, la mayoria de clientes opta
-por una configuracion tipica:
-- proporcionar solo nombre e email
-- hacer una subscripcion al email semanal (NO recibir el email diario)
-- recibir los emails en formato HTML
-- hacerse la tarjeta tipo BASICA
+The problem is that although a lot of flexibility is allowed, most clients choose
+for a typical configuration:
+- provide only name and email
+- subscribe to the weekly email (NOT the daily email)
+- receive emails in HTML format
+- take the BASIC card
 
-Y claro, el codigo para esta configuracion basica queda muy "pesado".
+And of course, the code for this basic configuration is very "heavy".
 
-		ConfigurationService configuration = new ConfigurationService();
-		LoyaltyService loyalty = new LoyaltyService();
-		CommunicationService communication = new CommunicationService();
+		ConfigurationService configuration = new ConfigurationService ();
+		LoyaltyService loyalty = new LoyaltyService ();
+		CommunicationService communication = new CommunicationService ();
 
-		loyalty.createCard(clientName, LoyaltyService.Type.BASIC);
-		configuration.addEmail(clientName, clientEmail);
-		CommunicationPreferences preferences = new CommunicationPreferences(false, true, true);
-		communication.setPreferences(clientName, preferences);
+		loyalty.createCard (clientName, LoyaltyService.Type.BASIC);
+		configuration.addEmail (clientName, clientEmail);
+		CommunicationPreferences preferences = new CommunicationPreferences (false, true, true);
+		communication.setPreferences (clientName, preferences);
 
 
-Podeis ver este codigo en el TestFacade. Fijaos en que las unicas partes "variables" del codigo
-anterior son clientName e clientEmail.
+You can see this code in the TestFacade. Notice that the only "variable" parts of the code
+above are clientName and clientEmail.
 
-Para eso se propone introducir un "facade" que simplifique este caso tan habitual.
+For this, it is proposed to introduce a "facade" to simplify this typical configuration.
 
-Cread el facade en una nueva clase que ofrezca un metodo tipo "registroExpres" con solo dos
-parametros, nombre e email. Este metodo debera realizar la inscripcion tipica mostrada antes.
+Create the facade in a new class that offers a method "registerExpress" with only two
+parameters, name and email. This method should perform the typical registration shown above.
 
-Hecho esto, modificad el metodo facade_test() de TestFacade para que use vuestra nueva clase.
+After that, modify the facade_test () method of TestFacade to use your new class.
 
-Comprobad que todo funciona bien ejecutando JUnit.
+Check that everything works well by running JUnit.
 
-Este ejercicio es muy facil: mucho copy-paste. Aprovechad para observar un ejemplo mas de su
-uso !
+This exercise is very easy: lots of copying and pasting. Take the opportunity to observe some more example of this
+use if you can!
