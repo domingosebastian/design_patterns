@@ -5,8 +5,8 @@ public class FightRegistration {
 	private final Tournament tournament;
 	private final SportsCenter sportCenter;
 
-	public FightRegistration(SportsCenter polideportivo) {
-		this.sportCenter = polideportivo;
+	public FightRegistration(SportsCenter sportscenter) {
+		this.sportCenter = sportscenter;
 		this.tournament = new Tournament("Fight Tournament");
 	}
 	
@@ -35,7 +35,7 @@ public class FightRegistration {
 	
 		
 		if (tournament.getAccepted().size() == 6) {
-			// full places -> we reserve sports center
+			// places sold out -> we reserve sports center
 			// The estimated time of the tournament is 4 hours
 			sportCenter.reserve(tournament, 4);
 		}
