@@ -1,6 +1,6 @@
 Our banking system has a basic Account interface.
 
-This allows it to have the name and balance of the client, as well allowing a
+This allows it to have the name and balance of the client, as well as allowing a
 new transaction to be made.
 
 The basic implementation is NormalAccount.
