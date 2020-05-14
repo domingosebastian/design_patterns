@@ -16,5 +16,7 @@ meaning that the car, telephone and radio objects do not have references to each
 The test provided will help you verify that your changes do not
 ruin the implemented functionality.
 
-When you change the code you should adapt the test, but only the initialization part (init method and, according to the solution, the variables).
+When you change the code you should adapt the test, but only the initialization part (init method 
+and, according to the solution, the variables).
+
 There is no need to change any of the @Test methods
