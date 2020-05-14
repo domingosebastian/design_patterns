@@ -17,7 +17,7 @@ To run the test you must go to test/edu/solid/srp /TestRecommender.java and, wit
 
 The test requires that you make two functional changes:
 - That the list of recommendations does not include films that the client has already seen
-- that the csv format changes from the current <title, gender, director> to <title, director, gender>
+- that the csv format changes from the current <title, genre, director> to <title, director, genre>
 
 As you can see, there are two different changes: one in the recommendation algorithm, another in the way of transmitting
  the data. In the current implementation, the two changes must be made in the same class,
