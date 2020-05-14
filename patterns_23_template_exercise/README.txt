@@ -1,17 +1,17 @@
-La aplicacion permite gestionar la inscripcion a torneos de lucha y a torneo de tenis.
+Our application allows us to manage the registration for wrestling tournaments and tennis tournament.
 
-Las dos clases principales son FightRegistration e TennisRegistration
+The two main classes are FightRegistration and TennisRegistration
 
-Ambas clases tienen una estructura similiar:
+Both classes have a similar structure:
 
-- el metodo principals es apunta(solicitud) que devuelve un boolean indicando si ha podido apuntarse o no
-- la estructura del metodo es:
-   - realiza una serie de validaciones para determinar si la solicitud cumple los requisitos
-   - mira si aun hay plazas disponibles
-   - si cumple los dos requisitos: apunta la solicitud al torneo
-   - si ya hay el maximo numero de apuntados, formaliza el torneo (por ahora solo reserva el polideportivo, 
-      pero esto podria ampliarse en el futuro)
-      
- Tenéis un test para comprovar que vuestras refactorizaciones no estropean la logica.
- 
- ¿Como podriais aplicar el template pattern para evitar las duplicidades en el codigo?
+- the main method is signup(register) that returns a boolean indicating whether or not someone has been able to register.
+- the structure of the method is:
+    - Performs a series of validations to determine if the applicant meets the requirements
+    - Check if there are still places available
+    - If both of these are possible, they applicant is signed up to the tournament
+    - If the maximum number of applicants is reached, confirm the tournament (for now only reserve the sports center,
+      although this would be expanded in the future)
+      
+  You have a test to verify that your refactorings do not ruin the logic.
+ 
+  How could you apply the template pattern to avoid duplication in the code?
