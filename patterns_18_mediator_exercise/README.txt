@@ -1,21 +1,20 @@
-La aplicacion muestra un sistema de control de los dispositivos de un coche:
-inicialmente solo hay radio y telefono pero puede extenderse en un futuro.
+The application shows a control system for the devices in a car:
+initially there's only radio and telephone but it may be extended in the future.
 
-El sistema implementa las siguientes reglas ( - evento -> accion del sistema ):
+The system implements the following rules (- event -> system action):
 
-- encender coche -> encender radio
-                 -> apagar musica telefono
-- sonar telefono -> apagar radio
-- encender radio -> apagar musica telefono
-- apagar coche -> apagar radio
+- start car -> turn on radio
+            -> turn off phone music
+- phone rings -> turn off radio
+- turn on radio -> turn off phone music
+- turn off car -> turn off radio
 
-Introducid una figura de mediator en el sistema de tal forma que se 
-sigan respetando las normas mostradas pero de forma mas "desacoplada":
-que los objetos coche, telefono y radio no tengan referencias entre ellas.
+Create a mediator in the system in such a way that it
+continues to respect the rules shown, but in a more "decoupled" way:
+meaning that the car, telephone and radio objects do not have references to each other.
 
-El test proporcionado os ayudara a comprobar que vuestros cambios no 
-estropean la funcionalidad implementada.
+The test provided will help you verify that your changes do not
+ruin the implemented functionality.
 
-Cuando cambies el codigo deberas adaptar el test, pero solo la parte 
-de inicializacion ( metodo init y, segun la solucion, las variables).
-No hay que cambiar nada de los metodos @Test
+When you change the code you should adapt the test, but only the initialization part (init method and, according to the solution, the variables).
+There is no need to change any of the @Test methods
