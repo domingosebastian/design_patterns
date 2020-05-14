@@ -22,17 +22,17 @@ public class TestTournament {
 
 	@Test
 	public void test_tennis_tournament_accepted() {
-		assertFalse("with 9 years old can not register",tennis.register(request_aged_9));
-		assertTrue("with 15 years old can register",tennis.register(request_aged_15_light));
-		assertTrue("with 15 years old can register",tennis.register(request_aged_15_heavy));
+		assertFalse("9 year olds cannot register",tennis.register(request_aged_9));
+		assertTrue("15 year olds can register",tennis.register(request_aged_15_light));
+		assertTrue("15 year olds can register",tennis.register(request_aged_15_heavy));
 		assertEquals("both accepted", 2, tennis.getTournament().getAccepted().size());
 	}
 	
 	@Test
 	public void test_fight_tournament_accepted() {
-		assertFalse("with 9 years old can not register",fight.register(request_aged_9));
-		assertFalse("with 15 years old but not enough weight can not register",fight.register(request_aged_15_light));
-		assertTrue("with 15 years old and enough weight can not register",fight.register(request_aged_15_heavy));
+		assertFalse("9 year olds cannot register",fight.register(request_aged_9));
+		assertFalse("15 year olds that are not heavy enough cannot register",fight.register(request_aged_15_light));
+		assertTrue("15 year olds that are heavy enough cannot register",fight.register(request_aged_15_heavy));
 		assertEquals("one accepted", 1, fight.getTournament().getAccepted().size());
 	}
 
@@ -43,7 +43,7 @@ public class TestTournament {
 			assertTrue("request " + (i+1), tennis.register(new Request("participant " + 1, 15, 60)));
 		}
 		
-		assertFalse("there are already 4 signed", tennis.register(request_aged_15_light));
+		assertFalse("there are already 4 signed-up", tennis.register(request_aged_15_light));
 		
 		Integer reservedHours = sportCenter.getReservations().get(tennis.getTournament());
 		
