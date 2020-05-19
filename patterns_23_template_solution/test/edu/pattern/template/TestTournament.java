@@ -58,7 +58,7 @@ public class TestTournament {
 			assertTrue("request " + (i+1), fight.register(new Request("participant " + 1, 15, 70)));
 		}
 		
-		assertFalse("there are already 6 signed", fight.register(request_aged_15_heavy));
+		assertFalse("there are already 6 signed-up", fight.register(request_aged_15_heavy));
 		
 		Integer reservedHours = sportCenter.getReservations().get(fight.getTournament());
 		
