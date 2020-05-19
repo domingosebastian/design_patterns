@@ -6,9 +6,9 @@ public class Mediator {
 	private Car car;
 	private Radio radio;
 	
-	public Mediator(Telephone telefono, Car coche, Radio radio) {
+	public Mediator(Telephone telephone, Car car, Radio radio) {
 		this.telephone = telefono;
-		this.car = coche;
+		this.car = car;
 		this.radio = radio;
 		this.telephone.setMediator(this);
 		this.car.setMediator(this);
